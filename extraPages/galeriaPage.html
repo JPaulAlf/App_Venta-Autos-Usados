@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Car list web page">
+    <meta name="author" content="John P. Alfaro">
+    <title>Fast Cars.cr | John P. Alfaro</title>
+    <link rel="icon" href="../menuImages/FastCarsLogo.png">
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+
+    <!--CONEXION A lOS CSS DE ESTILOS DE LA PAGINA -->
+    <link rel="stylesheet" type="text/css" href="../styleSheets/auxMenuStyle.css">
+    <link rel="stylesheet" type="text/css" href="../styleSheets/galeriaPageStyle.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="stylesheet" type="text/css" href="../styleSheets_GeneralStyles/generalStyle.css">
+    <link rel="stylesheet" type="text/css" href="../styleSheets_GeneralStyles/generalStyleMinWidth.css">
+    <link rel="stylesheet" type="text/css" href="../styleSheets_GeneralStyles/GeneralStyleMobile.css">
+    <link rel="stylesheet" type="text/css" href="../styleSheets_GeneralStyles/GeneralStyleMobile_Aux.css">
+
+    <script>
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+        }
+    </script>
+</head>
+
+<body>
+
+
+    <header id="encabezado">
+        <article id="menuEncabezado">
+            <nav class="navbar navbar-expand-lg navbar-light .bg-transparent" id="menuPrincipal">
+
+                <a class="navbar-brand" href="../homePage.html"><img src="../menuImages/FastCarsLogo.png" alt=""></a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="../extraPages/nosotrosPage.html">Nosotros</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Vehículos en venta </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="../extraPages/TiposAutos/auto4x4Page.html">4x4</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../extraPages/TiposAutos/autoSuvPage.html">SUV</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../extraPages/TiposAutos/autoPickUpPage.html">Pick-Up</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../extraPages/TiposAutos/autoSedanPage.html">Sedán</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../extraPages/TiposAutos/autoMicroPage.html">Micros</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item"
+                                    href="../extraPages/TiposAutos/autoTrabajoPage.html">Trabajo</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="../extraPages/contactoPage.html">Contáctenos</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Más
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="../extraPages/galeriaPage.html">Galería</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../extraPages/autorPage.html">Autor</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../extraPages/bibliografiaPage.html">Bibliografía</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </article>
+    </header>
+
+
+    <section>
+        <div class="jumbotron jumbotron-fluid" id="msjInicioGaleria">
+            <div class="container">
+                <h1 class="display-4"> Galería</h1>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <article id="barraDivisora">
+            <p>
+                <br>
+            </p>
+        </article>
+    </section>
+
+
+
+    <section id="contenidoGaleria">
+        <h3>Drift en Costa Rica</h3>
+        <article id="mainArticle">
+            <h4>¿Que es "drift"?</h4>
+            <p>
+                El drifting o drift es un estilo de conducción de vehículos que consiste en «sobrevirar», es decir,
+                derrapar
+                de manera que el vehículo forme un ángulo con la dirección de movimiento.
+            </p>
+            <p>
+                Como deporte de motor, se convirtió en una disciplina propia a fines de la década de los 90, con pilotos
+                especialmente entrenados, con automóviles preparados para mantener derrapes controlados a altas
+                velocidades y campeonatos en los que no se compite por tiempo sino por estilo. La mayoría de coches de
+                drift suelen ser de tracción trasera, pero también pueden ser de tracción integral a las cuatro ruedas.
+            </p>
+            <p>
+                Y como principales patrocinadores del deporte aca en Costa Rica, es un gusto compartir las siguientes
+                imágenes
+                de la ultima fecha del campeonato de "drifting" en el complejo de la Guacima en Alajuela.
+            </p>
+        </article>
+
+        <article id="galeria" class="container">
+            <div class="row" id="box-wrap">
+                <div class="col-lg-4 col-md-6 col-sm-12" id="box"> <img onclick="onClick(this)"
+                        src="../extraPagesImages/galeriaMultimedia/drift2.jpg" alt="Imagen"></div>
+                <div class="col-lg-4 col-md-6 col-sm-12" id="box"> <img onclick="onClick(this)"
+                        src="../extraPagesImages/galeriaMultimedia/drift3.jpg" alt="Imagen"></div>
+                <div class="col-lg-4 col-md-6 col-sm-12" id="box"> <img onclick="onClick(this)"
+                        src="../extraPagesImages/galeriaMultimedia/drift4.jpg" alt="Imagen"></div>
+                <div class="col-lg-4 col-md-6 col-sm-12" id="box"> <img onclick="onClick(this)"
+                        src="../extraPagesImages/galeriaMultimedia/drift5.jpg" alt="Imagen"></div>
+                <div class="col-lg-4 col-md-6 col-sm-12" id="box"> <img onclick="onClick(this)"
+                        src="../extraPagesImages/galeriaMultimedia/drif8.jpg" alt="Imagen"></div>
+                <div class="col-lg-4 col-md-6 col-sm-12" id="box"> <img onclick="onClick(this)"
+                        src="../extraPagesImages/galeriaMultimedia/supraRed.jpg" alt="Imagen"></div>
+            </div>
+        </article>
+        
+    </section>
+
+    <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+        <div class="w3-modal-content w3-animate-zoom">
+            <img id="img01" style="width:100%">
+        </div>
+    </div>
+
+    <section id="contenidoGaleria2">
+        <article id="mainArticle2">
+            <h3>Autódromo La Guácima</h3>
+            <div class="row" id="contenedorVideo">
+                <div class="col-lg-4 col-md-6 col-sm-12" id="contenedorVideo">
+                    <video controls loop preload="none" id="videoDrift"
+                        poster="../extraPagesImages/galeriaMultiMedia/posterDrift.jpg">
+                        <source src="../extraPagesImages/galeriaMultiMedia/Videos/videoCR_Drift.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12" id="contenedorVideo">
+                    <video controls loop preload="none" id="videoDrift"
+                        poster="../extraPagesImages/galeriaMultiMedia/posterTodoMotor.jpg">
+                        <source src="../extraPagesImages/galeriaMultiMedia/Videos/videoTodoMotor.mp4"
+                            type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section id="contenidoGaleria3">
+        <article id="mainArticle3">
+            <h3>Final de Motorshow 2013</h3>
+            <h4>Entrevista luego de carrera a Marios Brenes</h4>
+            <div class="row" id="contenedorAudio">
+                <div class="col-lg-4 col-md-6 col-sm-12" id="contenedorAudio">
+                    <audio controls loop preload="none" id="audioAdjunto">
+                        <source src="../extraPagesImages/galeriaMultiMedia/Videos/audioDrift2013.mp3"
+                            type="audio/mp3" />
+                    </audio>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <footer id="piePagina">
+        <section>
+            <article>
+                <p>
+                    Desarrollador, diseñador, autor, creador: <a href="../extraPages/autorPage.html">John P.
+                        Alfaro C.</a>
+                </p>
+                <P>
+                    Proyecto final programado para la carrera de Ingeniería del Software de la <a
+                        href="https://www.utn.ac.cr/">Universidad Técnica Nacional</a>
+                </P>
+                <p>
+                    © 2020 FastCars.cr, Inc
+                </p>
+            </article>
+        </section>
+    </footer>
+    
+</body>
+
+</html>

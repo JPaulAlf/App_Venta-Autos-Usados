@@ -1,0 +1,121 @@
+#msjInicioNosotros{
+    background: #426e86;
+    color: white;
+    padding: 20px;
+    margin-bottom: 0px;
+    width: 100%;
+    background-image: url(../extraPagesImages/nosotrosImageBanner.jpg);
+    background-image: image(width 100% margin-bottom 500px);
+    -webkit-background-size: 100% 100%;           /* Safari 3.0 */
+    -moz-background-size: 100% 100%;           /* Gecko 1.9.2 (Firefox 3.6) */
+    -o-background-size: 100% 100%;           /* Opera 9.5 */
+    background-size: 100% 100%;           /* Gecko 2.0 (Firefox 4.0) and other CSS3-compliant browsers */
+    height: auto;
+}
+#msjInicioNosotros h1{
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-weight: 400;
+    height: auto;
+}
+
+#barraDivisora{
+    margin-top: 0px;
+    background-color:#426e86 ;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#contenidoNosotros{
+    padding: 25px;
+    margin: 45px 45px 25px 45px;
+}
+#contenidoNosotros img{
+    height: 250px;
+    width: 300px;
+    margin-right: 15px;
+    margin-left: 0px;
+    vertical-align: middle;
+}
+#contenidoNosotros h3{
+    margin-top: 1px;
+    margin-bottom: 7px;
+}
+#textoMsjNosotros{
+    margin-bottom: 10px;
+    margin-left: 2px;
+    font-size: 18px;
+    text-align: justify;
+    font-weight: normal;
+}
+
+/*MAPA GOOGLE MAPS*/
+#ubicacionNegocio{
+    padding: 25px;
+    margin: 45px 45px 0px 45px;
+}
+#ubicacionNegocio h3 {
+    margin-bottom: 15px;
+}
+#grupoObjetosUbicacion{
+    margin-left: 4px;
+}
+#ubicacionNegocio #mapaGoogle{
+    height: 350px;
+    width: 71%;
+    border-radius: 10px;
+}
+#ubicacionNegocio #horariosOficina {
+    margin-left: 15px;
+}
+#ubicacionNegocio #horariosOficina #horarios {
+    list-style:none;
+    padding-inline-start: 20px;
+    font-size: 18px;
+    text-align: justify;
+    font-weight: normal;
+}
+
+
+/*Estilos de las imagenes con Grid12*/
+#galeria .col-lg4{
+    margin: 0 !important;
+    padding: 25px;
+}
+#galeria img {
+    width: 100%;
+   margin-bottom: 2%;
+   cursor:pointer
+}
+#box{
+    transition:.2s all; 
+}
+#box-wrap:hover #box{
+    filter:blur(img);
+    opacity:.5;
+    transform: scale(.98);
+    box-shadow:none;
+}
+#box-wrap:hover #box:hover{
+    transform:scale(1);
+    filter:blur(0px);
+    opacity:1;
+    
+    animation-name: hoverPop;
+    animation-duration: .4s;
+  }
+
+
+
+  @keyframes hoverPop {
+    0%, 100% {
+      transform: scale(1);
+    }
+    33% {
+      transform: scale(1.05);
+    }
+    66% {
+      transform: scale(.90);
+    }
+  }

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Car list web page">
+    <meta name="author" content="John P. Alfaro">
+    <title>Fast Cars.cr | John P. Alfaro</title>
+    <link rel="icon" href="../menuImages/FastCarsLogo.png">
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+
+    <!--CONEXION A lOS CSS DE ESTILOS DE LA PAGINA -->
+    <link rel="stylesheet" type="text/css" href="../styleSheets/auxMenuStyle.css">
+    <link rel="stylesheet" type="text/css" href="../styleSheets/nosotrosPageStyle.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="stylesheet" type="text/css" href="../styleSheets_GeneralStyles/generalStyle.css">
+    <link rel="stylesheet" type="text/css" href="../styleSheets_GeneralStyles/generalStyleMinWidth.css">
+    <link rel="stylesheet" type="text/css" href="../styleSheets_GeneralStyles/GeneralStyleMobile.css">
+    <link rel="stylesheet" type="text/css" href="../styleSheets_GeneralStyles/GeneralStyleMobile_Aux.css">
+
+    <!--CONEXION A LOS JS PARA EL MAPA DE " GOOGLE MAPS "-->
+    <script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWwi1IAXEBE1kegqz9pVlAbkl8kQlkF8Y&callback=initMap"></script>
+    <script src="../js_Documents/mapaGoogle.js"></script>
+
+    <script>
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+        }
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        });
+    </script>
+</head>
+
+<body>
+
+
+    <header id="encabezado">
+        <article id="menuEncabezado">
+            <nav class="navbar navbar-expand-lg navbar-light .bg-transparent" id="menuPrincipal">
+
+                <a class="navbar-brand" href="../homePage.html"><img src="../menuImages/FastCarsLogo.png" alt=""></a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="../extraPages/nosotrosPage.html">Nosotros</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Vehículos en venta </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="../extraPages/TiposAutos/auto4x4Page.html">4x4</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../extraPages/TiposAutos/autoSuvPage.html">SUV</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../extraPages/TiposAutos/autoPickUpPage.html">Pick-Up</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../extraPages/TiposAutos/autoSedanPage.html">Sedán</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../extraPages/TiposAutos/autoMicroPage.html">Micros</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item"
+                                    href="../extraPages/TiposAutos/autoTrabajoPage.html">Trabajo</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="../extraPages/contactoPage.html">Contáctenos</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Más
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="../extraPages/galeriaPage.html">Galería</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../extraPages/autorPage.html">Autor</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../extraPages/bibliografiaPage.html">Bibliografía</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </article>
+    </header>
+
+
+    <section>
+        <div class="jumbotron jumbotron-fluid" id="msjInicioNosotros">
+            <div class="container">
+                <h1 class="display-4"> Nosotros</h1>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <article id="barraDivisora">
+            <p>
+                <br>
+            </p>
+        </article>
+    </section>
+
+
+    <section>
+        <article id="contenidoNosotros">
+            <p>
+                <img src="../extraPagesImages/nosotrosManos.jpg" align="left" id="imagenNosotros">
+            <h3>¿Quienes somos?</h3>
+            <p id="textoMsjNosotros">
+                Empresa 100% costarricense dedicada a la comercializacion de vehiculos usados de todas las marcas , y de
+                toda clase, automoviles, rurales, pick ups, microbuses, paneles, etc, Con dos generaciones al servicio
+                de Costa Rica, padre y ahora el hijo actual
+                presidente de esta empresa y con mas de 10 años en el mercado nacional siempre ofreciendo excelentes
+                vehiculos y a precios muy competitivos y de todos los presupuestos.
+            </p>
+            <p id="textoMsjNosotros">
+                Brindamos garantia real por escrito en todas nuestras unidades, un excelente respaldo, recibimos su
+                vehiculo como parte de pago al mejor precio de mercado, y adicionalmente le financiamos su carro en las
+                mejores condiciones.
+            </p>
+            <p id="textoMsjNosotros">
+                Visitenos tenemos mas de cuarenta vehiculos en inventario permanente para que usted pueda escoger entre
+                varia opciones disponibles.
+            </p>
+            <p id="textoMsjNosotros">
+                Somos especialistas en servicio de calidad tanto en nuestros vehiculos asi como con nuestros clientes.
+            </p>
+            </p>
+        </article>
+
+        <article id="galeria" class="container">
+            <div class="row" id="box-wrap">
+                <div class="col-lg-4 col-md-6 col-sm-12" id="box"> <img onclick="onClick(this)"
+                        src="../extraPagesImages/galeriaNosotros/lobby.jpg" alt="Imagen"></div>
+                <div class="col-lg-4 col-md-6 col-sm-12" id="box"> <img onclick="onClick(this)"
+                        src="../extraPagesImages/galeriaNosotros/mazda-showroom.jpg" alt="Imagen"></div>
+                <div class="col-lg-4 col-md-6 col-sm-12" id="box"> <img onclick="onClick(this)"
+                        src="../extraPagesImages/galeriaNosotros/quantityCars.jpg" alt="Imagen"></div>
+            </div>
+        </article>
+    </section>
+
+    <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+        <div class="w3-modal-content w3-animate-zoom">
+            <img id="img01" style="width:100%">
+        </div>
+    </div>
+
+    <div id="ubicacionNegocio">
+        <h3>¿Dónde estamos ubicados?</h3>
+        <div id="grupoObjetosUbicacion" class="row">
+            <div id="mapaGoogle">
+                GoogleMaps.com
+            </div>
+            <div id="horariosOficina">
+                <h4>Horario de atención:</h4>
+                <ul id="horarios">
+                    <li> <b> Lunes:</b> 8:00am - 6:00pm</li>
+                    <li> <b> Martes:</b> 8:00am - 6:00pm</li>
+                    <li> <b> Miércoles:</b> 8:00am - 6:00pm</li>
+                    <li> <b> Jueves:</b> 8:00am - 6:00pm</li>
+                    <li> <b> Viernes:</b> 8:00am - 5:00pm</li>
+                    <li> <b> Sábado:</b> 9:00am - 3:00pm</li>
+                    <li> <b> Domingo:</b> Cerrado</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <section>
+        <article id="menuAuxiliar" class="btnAuxiliares">
+            <a href="../extraPages/TiposAutos/auto4x4Page.html">
+                <button type="button" class="btn  btn-circle btn-xl" id="imgButton" data-toggle="tooltip"
+                    data-placement="bottom" title="Autos 4x4"
+                    style="background-image: url(../menuImages/Carro4x4.jpg);">
+                </button>
+            </a>
+
+            <a href="../extraPages/TiposAutos/autoSuvPage.html">
+                <button type="button" class="btn  btn-circle btn-xl" id="imgButton" data-toggle="tooltip"
+                    data-placement="bottom" title="Autos SUV"
+                    style="background-image: url(../menuImages/CarroSUV.jpg);">
+                </button>
+            </a>
+
+            <a href="../extraPages/TiposAutos/autoPickUpPage.html">
+                <button type="button" class="btn  btn-circle btn-xl" id="imgButton" data-toggle="tooltip"
+                    data-placement="bottom" title="Autos Pick-Up's"
+                    style="background-image: url(../menuImages/CarroPickUp.jpg);">
+                </button>
+            </a>
+
+            <a href="../extraPages/TiposAutos/autoSedanPage.html">
+                <button type="button" class="btn  btn-circle btn-xl" id="imgButton" data-toggle="tooltip"
+                    data-placement="bottom" title="Autos Sedan"
+                    style="background-image: url(../menuImages/CarroSeedan.jpg);">
+                </button>
+            </a>
+
+            <div class="row">
+                <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                        <div class="card card-body">
+                            Carros 4x4
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+
+    <footer id="piePagina">
+        <section>
+            <article>
+                <p>
+                    Desarrollador, diseñador, autor, creador: <a href="../extraPages/autorPage.html">John P.
+                        Alfaro C.</a>
+                </p>
+                <P>
+                    Proyecto final programado para la carrera de Ingeniería del Software de la <a
+                        href="https://www.utn.ac.cr/">Universidad Técnica Nacional</a>
+                </P>
+                <p>
+                    © 2020 FastCars.cr, Inc
+                </p>
+            </article>
+        </section>
+    </footer>
+
+
+</body>
+
+</html>

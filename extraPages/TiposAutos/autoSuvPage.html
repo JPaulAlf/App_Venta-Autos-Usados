@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="description" content="Car list web page">
+    <meta name="author" content="John P. Alfaro">
+    <title>Fast Cars.cr | John P. Alfaro</title>
+    <link rel="icon" href="../../menuImages/FastCarsLogoTab.png">
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+
+    <!--CONEXION A lOS CSS DE ESTILOS DE LA PAGINA -->
+    <link rel="stylesheet" type="text/css" href="../../styleSheets/carListStyle.css">
+    <link rel="stylesheet" type="text/css" href="../../styleSheets/TiposAutos_Styles/autoSuvPageStyle.css">
+
+    <link rel="stylesheet" type="text/css" href="../../styleSheets_GeneralStyles/generalStyle.css">
+    <link rel="stylesheet" type="text/css" href="../../styleSheets_GeneralStyles/generalStyleMinWidth.css">
+    <link rel="stylesheet" type="text/css" href="../../styleSheets_GeneralStyles/GeneralStyleMobile.css">
+    <link rel="stylesheet" type="text/css" href="../../styleSheets_GeneralStyles/GeneralStyleMobile_Aux.css">
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <header id="encabezado">
+        <article id="menuEncabezado">
+            <nav class="navbar navbar-expand-lg navbar-light .bg-transparent" id="menuPrincipal">
+
+                <a class="navbar-brand" href="../../homePage.html"><img src="../../menuImages/FastCarsLogo.png"
+                        alt=""></a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="../../extraPages/nosotrosPage.html">Nosotros</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Vehículos en venta </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="../../extraPages/TiposAutos/auto4x4Page.html">4x4</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../../extraPages/TiposAutos/autoSuvPage.html">SUV</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item"
+                                    href="../../extraPages/TiposAutos/autoPickUpPage.html">Pick-Up</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../../extraPages/TiposAutos/autoSedanPage.html">Sedán</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item"
+                                    href="../../extraPages/TiposAutos/autoMicroPage.html">Micros</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item"
+                                    href="../../extraPages/TiposAutos/autoTrabajoPage.html">Trabajo</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="../../extraPages/contactoPage.html">Contáctenos</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Más
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="../../extraPages/galeriaPage.html">Galería</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../../extraPages/autorPage.html">Autor</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../../extraPages/bibliografiaPage.html">Bibliografía</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </article>
+    </header>
+
+    <section id="banner">
+        <div class="jumbotron jumbotron-fluid" id="msjInicio_AutoSUV">
+            <div class="container">
+                <h1 class="display-4" id="content">Vehículos SUV </h1>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <article id="barraDivisora">
+            <p>
+                <br>
+            </p>
+        </article>
+    </section>
+
+    <section id="contenidoAuto">
+        <article>
+            <h3>¿Porqué comprar un auto SUV?</h3>
+            <p>
+                Una de las ventajas que tiene es la posición de manejo elevada en conjunto con las diferentes
+                tecnologías
+                que ayudan a mejorar la percepción del exterior, permiten tener un mayor control del entorno. Los
+                asistentes activos y pasivos para mantener la estabilidad y la tracción bajo cualquier circunstancia.
+            </p>
+            <p>
+                Otra de las ventajas si vas a comprar un SUV, es sus numerosas bolsas de aire, sistemas de retención en
+                los cinturones, frenos ABS y EBD, sistemas de control antivuelco, anti patinado, frenos de parqueo
+                predictivo, asistentes de control de cambio de carril, trafico cruzado y algunas hasta nos ayudan a
+                estacionar el auto de forma activa, donde ni siquiera tenemos que tomar el volante.
+            </p>
+            <p>Las opciones en SUV, que tenemos disponibles actualmente son las siguientes:</p>
+        </article>
+    </section>
+
+    <article id="contenido">
+
+        <div class="container">
+
+            <div class="row" id="contenedorCartas">
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" id="cartaObjeto">
+                    <div class="card" id="cartaContenido">
+                        <p id="autoMarca">TOYOTA</p>
+                        <img class="card-img-top" id="imagenCarta"
+                            src="../../extraPagesImages/autosImages/SUV/Rav4_2014.jpg" alt="Card image cap">
+                        <div class="card-body" id="autoInformacion">
+                            <h4 class="card-title">
+                                Rav4 - <b>2014</b>
+                                <b id="autoTransmision">(Manual)</b>
+                            </h4>
+                            <p id="contenedorMsjCarro">
+                                <marquee scrollamount="3" id="MsjCarro">AROS DE LUJO ,HALOGENOS , PINTURA IMPECABLE
+                                    ,COMPRADO EN AGENCIA DOBLE TRACCIÓN </marquee>
+                            </p>
+                            <h6 id="autoColones">₡9,990,000</h6>
+                            <h6 id="autoDolares">($16,567)*
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="../../extraPages/clientePage.html" class="stretched-link" id="btnVer"></a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" id="cartaObjeto">
+                    <div class="card" id="cartaContenido">
+                        <p id="autoMarca">TOYOTA</p>
+                        <img class="card-img-top" id="imagenCarta"
+                            src="../../extraPagesImages/autosImages/SUV/Rush_2019.jpg" alt="Card image cap">
+                        <div class="card-body" id="autoInformacion">
+                            <h4 class="card-title">
+                                Rush - <b>2019</b>
+                                <b id="autoTransmision">(Automático)</b>
+                            </h4>
+                            <p id="contenedorMsjCarro">
+                                <marquee scrollamount="3" id="MsjCarro">RECORD DE AGENCIA, NACIONAL, TODOS LOS
+                                    MANTENIMIENTOS EN PURDY</marquee>
+                            </p>
+                            <h6 id="autoColones">₡13,450,000</h6>
+                            <h6 id="autoDolares">($22,305)*
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="../../extraPages/clientePage.html" class="stretched-link" id="btnVer"></a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" id="cartaObjeto">
+                    <div class="card" id="cartaContenido">
+                        <p id="autoMarca">MAZDA</p>
+                        <img class="card-img-top" id="imagenCarta"
+                            src="../../extraPagesImages/autosImages/SUV/CX5_2018.jpg" alt="Card image cap">
+                        <div class="card-body" id="autoInformacion">
+                            <h4 class="card-title">
+                                CX5 - <b>2018</b>
+                                <b id="autoTransmision">(Automático)</b>
+                            </h4>
+                            <p id="contenedorMsjCarro">
+                                <marquee scrollamount="3" id="MsjCarro">EXCELENTE CARRO. POCO USO. RÉCORD DE AGENCIA
+                                </marquee>
+                            </p>
+                            <h6 id="autoColones">₡16,500,000</h6>
+                            <h6 id="autoDolares">($27,363)*
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="../../extraPages/clientePage.html" class="stretched-link" id="btnVer"></a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" id="cartaObjeto">
+                    <div class="card" id="cartaContenido">
+                        <p id="autoMarca">HYUNDAI</p>
+                        <img class="card-img-top" id="imagenCarta"
+                            src="../../extraPagesImages/autosImages/SUV/Tucson_2010.jpg" alt="Card image cap">
+                        <div class="card-body" id="autoInformacion">
+                            <h4 class="card-title">
+                                Tucson - <b>2010</b>
+                                <b id="autoTransmision">(Automático)</b>
+                            </h4>
+                            <p id="contenedorMsjCarro">
+                                <marquee scrollamount="3" id="MsjCarro">CINCO PASAJEROS, GASOLINA, RECORD DE AGENCIA
+                                </marquee>
+                            </p>
+                            <h6 id="autoColones">₡8,542,500</h6>
+                            <h6 id="autoDolares">($14,167)*
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="../../extraPages/clientePage.html" class="stretched-link" id="btnVer"></a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" id="cartaObjeto">
+                    <div class="card" id="cartaContenido">
+                        <p id="autoMarca">PORSCHE </p>
+                        <img class="card-img-top" id="imagenCarta"
+                            src="../../extraPagesImages/autosImages/SUV/Macane_2015.jpg" alt="Card image cap">
+                        <div class="card-body" id="autoInformacion">
+                            <h4 class="card-title">
+                                Macan - <b>2015</b>
+                                <b id="autoTransmision">(Automático)</b>
+                            </h4>
+                            <p id="contenedorMsjCarro">
+                                <marquee scrollamount="3" id="MsjCarro">INCLUYE MARCHAMO, GARANTIA DE FABRICA, IMPECABLE
+                                </marquee>
+                            </p>
+                            <h6 id="autoColones">₡27,000,000</h6>
+                            <h6 id="autoDolares">($44,776)*
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="../../extraPages/clientePage.html" class="stretched-link" id="btnVer"></a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" id="cartaObjeto">
+                    <div class="card" id="cartaContenido">
+                        <p id="autoMarca">DAIHATSU</p>
+                        <img class="card-img-top" id="imagenCarta"
+                            src="../../extraPagesImages/autosImages/SUV/Terios_2016.jpg" alt="Card image cap">
+                        <div class="card-body" id="autoInformacion">
+                            <h4 class="card-title">
+                                Terios - <b>2016</b>
+                                <b id="autoTransmision">(Automático)</b>
+                            </h4>
+                            <p id="contenedorMsjCarro">
+                                <marquee scrollamount="3" id="MsjCarro">AUTOMATICO, DOBLE TRACCION, PERFECTO ESTADO.
+                                </marquee>
+                            </p>
+                            <h6 id="autoColones">₡7,475,000</h6>
+                            <h6 id="autoDolares">($12,396)*
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="../../extraPages/clientePage.html" class="stretched-link" id="btnVer"></a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" id="cartaObjeto">
+                    <div class="card" id="cartaContenido">
+                        <p id="autoMarca">TOYOTA</p>
+                        <img class="card-img-top" id="imagenCarta"
+                            src="../../extraPagesImages/autosImages/SUV/Rav4_2013.jpg" alt="Card image cap">
+                        <div class="card-body" id="autoInformacion">
+                            <h4 class="card-title">
+                                Rav4 - <b>2013</b>
+                                <b id="autoTransmision">(Manual)</b>
+                            </h4>
+                            <p id="contenedorMsjCarro">
+                                <marquee scrollamount="3" id="MsjCarro">DOBLE TRACCION, PERFECTO ESTADO.
+                                </marquee>
+                            </p>
+                            <h6 id="autoColones">₡8,200,000</h6>
+                            <h6 id="autoDolares">($13,599)*
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="../../extraPages/clientePage.html" class="stretched-link" id="btnVer"></a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" id="cartaObjeto">
+                    <div class="card" id="cartaContenido">
+                        <p id="autoMarca">MUY PRONTO</p>
+                        <img class="card-img-top" id="imagenCarta"
+                            src="../../extraPagesImages/autosImages/PROXIMAMENTE.png" alt="Card image cap">
+                        <div class="card-body" id="autoInformacion">
+                            <h4 class="card-title">
+                                ???? - <b>####</b>
+                                <b id="autoTransmision">(????????)</b>
+                            </h4>
+                            <p id="contenedorMsjCarro">
+                                <marquee scrollamount="3" id="MsjCarro"> PROXIMAMENTE MAS VEHICULOS SUV
+                                </marquee>
+                            </p>
+                            <h6 id="autoColones">₡##,###,###</h6>
+                            <h6 id="autoDolares">($##,###)*
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="#" class="stretched-link" id="btnVer"></a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </article>
+    </section>
+
+
+
+    <footer id="piePagina">
+        <section>
+            <article>
+                <p>
+                    Desarrollador, diseñador, autor, creador: <a href="../../extraPages/autorPage.html">John P.
+                        Alfaro C.</a>
+                </p>
+                <P>
+                    Proyecto final programado para la carrera de Ingeniería del Software de la <a
+                        href="https://www.utn.ac.cr/">Universidad Técnica Nacional</a>
+                </P>
+                <p>
+                    © 2020 FastCars.cr, Inc
+                </p>
+            </article>
+        </section>
+    </footer>
+
+
+
+</body>
+
+</html>

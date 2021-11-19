@@ -1,0 +1,152 @@
+/*ESTILOS GENERALES*/
+body{
+    margin: 0;
+    padding:0;
+  }
+  #msjInicioGaleria{
+      background: #426e86;
+      color: white;
+      padding: 20px;
+      margin-bottom: 0px;
+      width: 100%;
+
+    background-image: url(../extraPagesImages/galeriaImageBanner.jpg);
+    background-image: image(width 100% margin-bottom 500px);
+    -webkit-background-size: 100% 100%;           /* Safari 3.0 */
+    -moz-background-size: 100% 100%;           /* Gecko 1.9.2 (Firefox 3.6) */
+    -o-background-size: 100% 100%;           /* Opera 9.5 */
+    background-size: 100% 100%;           /* Gecko 2.0 (Firefox 4.0) and other CSS3-compliant browsers */
+    height: auto;
+
+  }
+  #msjInicioGaleria h1{
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-weight: 400;
+    height: auto;
+  }
+  
+  #barraDivisora{
+      margin-top: 0px;
+      background-color:#426e86 ;
+      height: 30px;
+      width: 100%;
+      margin-bottom: 25px;
+  }
+
+
+/*Estilos de la info de la pagina*/
+#contenidoGaleria {
+    padding: 25px;
+    margin: 5px 45px 25px 45px;
+    overflow: hidden;
+}
+#contenidoGaleria #mainArticle{
+    padding: 15px;
+    overflow: hidden;
+    text-align: justify;
+}
+#contenidoGaleria #mainArticle p{
+    font-size: 18px;
+}
+
+
+/*ESTILO DE VIDEO*/
+#contenidoGaleria2{
+    text-align: center;
+    width: 100%;
+    border-bottom: 12px solid #426e86;
+    border-top: 12px solid#426e86;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #f8f1e5;
+    background-color: #2f3131;
+}
+#contenidoGaleria2 #mainArticle2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#contenidoGaleria2 #mainArticle2 #contenedorVideo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contenidoGaleria2 #mainArticle2 #contenedorVideo #videoDrift{
+    width: 100%;
+    height: 100%;
+}
+#contenidoGaleria2 #mainArticle2 #contenedorVideo #videoDrift:hover{
+    animation-name: hoverPop;
+    animation-duration: .4s;
+}
+
+/*ESTILO DE AUDIO*/
+#contenidoGaleria3{
+    text-align: center;
+    width: 100%;
+    border-bottom: 12px solid #426e86;
+    border-top: 12px solid#426e86;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    color: #f8f1e5;
+    background-color: #2f3131;
+}
+#contenidoGaleria3 #mainArticle3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#contenidoGaleria3 #mainArticle3 #contenedorAudio{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#contenidoGaleria3 #mainArticle3 #contenedorAudio #audioAdjunto{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*Estilos de las imagenes con Grid12*/
+#galeria .col-lg4{
+    margin: 0 !important;
+    padding: 25px;
+}
+#galeria img {
+    width: 100%;
+   margin-bottom: 2%;
+   cursor:pointer
+}
+#box{
+    transition:.2s all; 
+}
+#box-wrap:hover #box{
+    filter:blur(img);
+    opacity:.5;
+    transform: scale(.98);
+    box-shadow:none;
+}
+#box-wrap:hover #box:hover{
+    transform:scale(1);
+    filter:blur(0px);
+    opacity:1;
+    
+    animation-name: hoverPop;
+    animation-duration: .4s;
+  }
+
+
+
+  @keyframes hoverPop {
+    0%, 100% {
+      transform: scale(1);
+    }
+    33% {
+      transform: scale(1.05);
+    }
+    66% {
+      transform: scale(.90);
+    }
+  }

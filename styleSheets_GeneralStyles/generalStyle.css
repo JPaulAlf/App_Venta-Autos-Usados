@@ -1,0 +1,108 @@
+
+
+body {
+    background-color: #f8f1e5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1,
+h2,
+h3{
+    display: block;
+    margin: auto;
+}
+head{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 20px;
+}
+#menuEncabezado {
+    background: #f8f1e5;
+    border: 0px solid rgba(0, 0, 0, 0.6);
+    width: 100%;
+    padding: 4px;
+}
+
+
+/*MENU SUPERIOR DE NAVEGACION CONETENIDO*/
+#menuDiapositivas h1{
+    color:white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#imagenesCarrusel{
+    width: 100%;
+}
+.navbar-brand img{
+    height: 75px;
+    width: 320px;
+}
+footer p{
+    display: block;
+    margin: auto;
+    margin-left: 20px;
+}
+a {
+    color: #324851;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+
+/*MENU SUPERIOR DE NAVEGACION ANIMACIONES*/
+#menuEncabezado a:hover{
+    color: #426e86;
+    font-size: 150%;
+}
+#menuEncabezado a {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+#menuEncabezado a:hover,#menuEncabezado a:focus {
+    background-size: 100% 2px;
+}
+#menuEncabezado a{
+    background-color: #f8f1e5;
+}
+#menuEncabezado div{
+    margin-left: 25px;
+    background-color: #f8f1e5;
+}
+#menuEncabezado li{
+    background-color: #f8f1e5;
+}
+
+
+/*PIE DE PAGINA*/
+#piePagina{
+    background-color: #2f3131;
+    color: #f8f1e5;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+#piePagina article{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+#piePagina a{
+    background-color: #2f3131;
+    color: #f8f1e5;
+    font-size: 15px;
+}
+#piePagina a:hover{
+    color: #f9ba32;
+    font-size: 120%;
+}
+#piePagina p{
+    margin-bottom: 0px;
+    font-size: 15px;
+}
+
+
+
+  

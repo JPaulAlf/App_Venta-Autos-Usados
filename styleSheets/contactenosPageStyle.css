@@ -1,0 +1,62 @@
+#msjInicioContacto{
+    background: #426e86;
+    color: white;
+    padding: 20px;
+    margin-bottom: 0px;
+    width: 100%;
+
+
+    background-image: url(../extraPagesImages/contactenosImageBanner.jpg);
+    background-image: image(width 100% margin-bottom 500px);
+    -webkit-background-size: 100% 100%;           /* Safari 3.0 */
+    -moz-background-size: 100% 100%;           /* Gecko 1.9.2 (Firefox 3.6) */
+    -o-background-size: 100% 100%;           /* Opera 9.5 */
+    background-size: 100% 100%;           /* Gecko 2.0 (Firefox 4.0) and other CSS3-compliant browsers */
+    height: auto;
+
+}
+#msjInicioContacto h1{
+    height: auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+
+#barraDivisora{
+    margin-top: 0px;
+    background-color:#426e86 ;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+
+#contenidoContacto{
+    padding: 25px;
+    margin: 45px 45px 45px 45px;
+}
+#contenidoContacto img{
+    height: 250px;
+    width: 300px;
+    margin-right: 15px;
+    margin-left: 0px;
+    vertical-align: middle;
+}
+#contenidoContacto h3{
+    margin-top: 1px;
+    margin-bottom: 7px;
+}
+
+
+
+#btnEnviarFormulario{
+    background-color:#426e86 ;
+    font-weight: normal;
+}
+#btnEnviarFormulario:hover{
+    background-color:#f9ba32 ;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+}
+

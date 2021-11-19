@@ -1,0 +1,234 @@
+/*ESTILOS GENERALES*/
+body{
+  margin: 0;
+  padding:0;
+}
+#msjInicioAutor{
+    background: #426e86;
+    color: white;
+    padding: 20px;
+    margin-bottom: 0px;
+    max-width: 100%;
+
+    height: auto;
+    background-image: url(../extraPagesImages/autorImageBanner.jpg);
+    background-image: image(width 100% margin-bottom 500px);
+    -webkit-background-size: 100% 100%;           /* Safari 3.0 */
+    -moz-background-size: 100% 100%;           /* Gecko 1.9.2 (Firefox 3.6) */
+    -o-background-size: 100% 100%;           /* Opera 9.5 */
+    background-size: 100% 100%;           /* Gecko 2.0 (Firefox 4.0) and other CSS3-compliant browsers */
+
+}
+#msjInicioAutor h1{
+  margin-bottom: 25px;
+  margin-top: 25px;
+  height: auto;
+}
+
+
+
+#barraDivisora{
+    margin-top: 0px;
+    background-color:#426e86 ;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+
+/*ESTILO DE INFORMACION PERSONAL*/
+#contenidoAutor{
+    padding: 25px;
+    margin: 5px 45px 25px 45px;
+    overflow: hidden;
+}
+#contenidoAutor a{
+    font-size: 18px;
+    text-align: justify;
+    font-weight: normal;
+}
+#contenidoAutor a:hover{
+    font-weight: bolder;
+    color: #f9ba32;
+}
+#contenidoAutor p{
+    font-size: 18px;
+    text-align: justify;
+    font-weight: normal;
+}
+#contenidoAutor h3 {
+    margin-bottom: 15px;
+}
+#contenidoAutor #grupoObjetos_InfoPersonal{
+  margin-left: 4px;
+
+}
+#contenidoAutor #grupoObjetos_InfoPersonal #imagenPersonal{
+    width: 250px;
+    height: 310px;
+    margin-right: 25px;
+    border-radius: 10%;
+}
+#contenidoAutor #grupoObjetos_InfoPersonal #InfoPersonal {
+    margin-left: 15px;
+}
+#contenidoAutor #grupoObjetos_InfoPersonal #InfoPersonal ul {
+    list-style:none;
+    padding-inline-start: 20px;
+    font-size: 18px;
+    text-align: justify;
+    font-weight: normal;
+}
+
+
+/*MOVIMIENTO Y ESTILKO DE REDES SOCIALES*/
+.btn{
+  display: hidden;
+  background-color: transparent;
+}
+.btn-circle{
+  display: hidden;
+  background-color: transparent;
+}
+#contenidoRedes{
+  /*
+  margin-top: 50px;
+  margin-left :auto;
+  margin-right:auto;
+  width: 100%;
+
+  border-color: white;
+  border-top-style: dashed;
+  border-right-style: double;
+  border-bottom-style: dotted;
+  border-left-style: solid;
+  */
+  margin-top: 45px;
+  margin-bottom: 45px;
+  color: #f8f1e5;
+  background-color:#2f3131;
+}
+#redesSociales{
+  background-size: auto; 
+  text-align: center; 
+ /*
+  border-color: white;
+  border-top-style: dashed;
+  border-right-style: double;
+  border-bottom-style: dotted;
+  border-left-style: solid;
+  */
+}
+#redesSociales ul { 
+  margin-right: 40px;
+  display: contents;
+  background-size: auto; 
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+  
+  #redesSociales ul li {
+    text-align: center;
+  }
+#redesSociales ul li a {
+    width: 80px;
+    height:  80px;
+    background-color:  #f8f1e5;
+    text-align: center;
+    line-height:  80px;
+    font-size: 35px;
+    margin: 0 10px;
+    border-radius: 50%;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border: 3px solid  #f8f1e5;
+    z-index: 1;
+}
+#redesSociales ul li a .icon {
+    position: relative;
+    color: #262626;
+    transition: .5s;
+    z-index: 3;
+}
+#redesSociales ul li a:hover .icon {
+    color:  #f8f1e5;
+    transform: rotateY(360deg);
+}
+#redesSociales ul li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: .5s;
+    z-index: 2;
+}
+#redesSociales  ul li a:hover:before {
+    top: 0;
+}
+#redesSociales ul li:nth-child(1) a:before{
+    background: #3b5999;
+}
+#redesSociales ul li:nth-child(2) a:before{
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+#redesSociales ul li:nth-child(3) a:before {
+    background: #0077b5;
+}
+#redesSociales  ul li:nth-child(4) a:before {
+    background: #25D366;
+}
+
+
+/*CSS DE SECCION DE PROGRAMACION*/
+#lenguajesConocidos{
+  padding: 25px;
+  margin: 5px 45px 25px 45px;
+  overflow: hidden;
+  margin-bottom: 45px;
+
+}
+#lenguajesConocidos h3 {
+    margin-bottom: 15px;
+}
+#lenguajesConocidos p{
+  font-size: 18px;
+  text-align: justify;
+  font-weight: normal;
+}
+#lenguajesConocidos table{
+  width: 67%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 8px solid #2f3131;
+}
+#lenguajesConocidos table tr th {
+  background-color: #426e86;
+  color:#f8f1e5 ;
+  text-align: center;
+  font-size: 22px;
+}
+#lenguajesConocidos table tr:hover{
+  background-color:#f9ba32;
+  color:#2f3131 ;
+  border: 4px solid #426e86;
+  font-weight: bold;
+}
+#lenguajesConocidos table tr td { 
+  text-align: center;
+}
+#lenguajesConocidos table tr #nombre { 
+  font-size: 18px;
+}
+#lenguajesConocidos table tr #porcentaje { 
+  font-size: 20px;
+}

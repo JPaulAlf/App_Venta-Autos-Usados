@@ -1,0 +1,55 @@
+
+#menuAuxiliar {
+    background: #426e86;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    color: black;
+}
+#menuAuxiliar button{
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 5px;
+}
+.btnAuxiliares { 
+    background-size: auto; 
+    padding-top: 100px; 
+    text-align: center; 
+} 
+
+.btn-circle.btn-xl { 
+    color: black;
+    font-weight: bold;
+    width: 125px; 
+    height: 100px; 
+    padding: 32px 16px; 
+    border-radius: 75px; 
+    font-size: 22px; 
+    text-align: center; 
+} 
+
+
+/*EVENTO DE MOVIMIENTO INFINITO DE LA FOTO Y BLUR*/
+
+#menuAuxiliar:hover button:hover {
+    box-shadow:0 8px 15px 0px #f9ba32;
+    
+    animation-name: hoverPop;
+    animation-duration: .4s;
+}
+#menuAuxiliar button:active {
+  filter: blur(.8px);
+}
+@keyframes hoverPop {
+  0%, 100% {
+    transform: scale(1);
+  }
+  33% {
+    transform: scale(1.05);
+  }
+  66% {
+    transform: scale(.90);
+  }
+}
+

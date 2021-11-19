@@ -1,0 +1,102 @@
+#msjInicio{
+    background: #426e86;
+    color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+#contenido {
+    background: #f8f1e5;
+    border: 0px solid #2f3131;
+    color: black;
+    margin-top: 45px;
+}
+
+
+#cartaObjeto{
+    margin-bottom: 20px;
+}
+
+
+#cartaContenido{
+    background-color:#efefef;
+    color: black;
+    width: 13rem;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 1);
+}
+.card-img-top{
+    margin-top: 1px;
+    height: 100px;
+    width:100%;
+    height:auto;
+}
+#imagenCarta{
+    height: 140px;
+}
+#autoMarca{
+    text-align: center;
+    font-size: 25px;
+    background: #f9ba32;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+#autoTransmision{
+    display: block;
+    margin: auto;
+    font-weight: normal;
+    font-size: 18px;
+}
+#autoColones{
+    display: block;
+    margin: auto;
+    color: green;
+    font-size: 22px;
+}
+#autoDolares{
+    display: block;
+    margin: auto;
+    font-size: 16px;
+}
+
+
+/*EFECTO DE CUANDO SE PASA EL CURSOR SOBRE LAS CARTAS*/
+#cartaContenido{
+    border:1px solid #d6d6d6;
+    border-radius:3px;
+    transition:.2s all; 
+}
+#contenedorCartas:hover #cartaContenido{
+    transform: scale(.98);
+}
+#contenedorCartas:hover #cartaContenido:hover{
+    transform:scale(1.01);
+    box-shadow:0 8px 15px 0px #f9ba32;
+    
+   /* animation-name: hoverPop;
+    animation-duration: .4s; */
+}
+
+@keyframes hoverPop {
+    0%, 100% {
+      transform: scale(1);
+    }
+    33% {
+      transform: scale(1.05);
+    }
+    66% {
+      transform: scale(.90);
+    }
+  }
+
+/*CSS CUANDO SE DA CLICK DE VISITAR*/
+#contenedorCartas #cartaContenido:active{
+    background-color:  #2f3131;
+    color:  #d6d6d6;
+}
+#contenedorCartas:active #cartaContenido:active{
+    filter: blur(.8px);
+}
+#contenedorCartas #cartaContenido:active #autoColones{
+    color:   #f9ba32;
+    font-weight: bold;
+}

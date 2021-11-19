@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Car list web page">
+    <meta name="author" content="John P. Alfaro">
+    <title>Fast Cars.cr | John P. Alfaro</title>
+    <link rel="icon" href="../menuImages/FastCarsLogo.png">
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+
+    <!--CONEXION A lOS CSS DE ESTILOS DE LA PAGINA -->
+    <link rel="stylesheet" type="text/css" href="../styleSheets/auxMenuStyle.css">
+    <link rel="stylesheet" type="text/css" href="../styleSheets/bibliografiaPageStyle.css">
+
+    <link rel="stylesheet" type="text/css" href="../styleSheets_GeneralStyles/generalStyle.css">
+    <link rel="stylesheet" type="text/css" href="../styleSheets_GeneralStyles/generalStyleMinWidth.css">
+    <link rel="stylesheet" type="text/css" href="../styleSheets_GeneralStyles/GeneralStyleMobile.css">
+    <link rel="stylesheet" type="text/css" href="../styleSheets_GeneralStyles/GeneralStyleMobile_Aux.css">
+
+    <!--ESTILOS DE BOTONES DE REDES SOCIALES, ESTILOS CSS Y ANIMACION-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <!--
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    -->
+    <script>
+        $(document).ready(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+      });
+  </script>
+
+</head>
+
+<body>
+
+
+    <header id="encabezado">
+        <article id="menuEncabezado">
+            <nav class="navbar navbar-expand-lg navbar-light .bg-transparent" id="menuPrincipal">
+
+                <a class="navbar-brand" href="../homePage.html"><img src="../menuImages/FastCarsLogo.png" alt=""></a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="../extraPages/nosotrosPage.html">Nosotros</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Vehículos en venta </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="../extraPages/TiposAutos/auto4x4Page.html">4x4</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../extraPages/TiposAutos/autoSuvPage.html">SUV</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../extraPages/TiposAutos/autoPickUpPage.html">Pick-Up</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../extraPages/TiposAutos/autoSedanPage.html">Sedán</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../extraPages/TiposAutos/autoMicroPage.html">Micros</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item"
+                                    href="../extraPages/TiposAutos/autoTrabajoPage.html">Trabajo</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="../extraPages/contactoPage.html">Contáctenos</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Más
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="../extraPages/galeriaPage.html">Galería</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../extraPages/autorPage.html">Autor</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../extraPages/bibliografiaPage.html">Bibliografía</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </article>
+    </header>
+
+
+    <section id="banner">
+        <div class="jumbotron jumbotron-fluid" id="msjInicioBibliografia">
+            <div class="container">
+                <h1 class="display-4" id="content">Bibliografía</h1>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <article id="barraDivisora">
+            <p>
+                <br>
+            </p>
+        </article>
+    </section>
+
+    <section id="contenidoBibliografia">
+        <p>
+            Los siguientes son los sitios de donde se obtuvieron las animaciones, información, imágenes y demás de
+            ese
+            proyecto programado
+        </p>
+        <div id="links">
+            <h3>Imágenes</h3>
+            <ol>
+                <li>
+                    Imágenes de banners <a
+                        href="https://stock.adobe.com/cr/?as_channel=sem&as_campclass=nonbrand&as_campaign=CR%7CCPRO%7CStock%7CAWAR%7CImages%7CGG%7C%7C&as_source=google&as_camptype=acquisition&sdid=4JW79JLP&ef_id=EAIaIQobChMI4-vgxaDt7AIVGoeGCh0ucQ6oEAAYASAAEgJ_GfD_BwE:G:s&s_kwcid=AL!3085!3!354783272826!e!!g!!imagen%20hd!2022160291!77178374132&gclid=EAIaIQobChMI4-vgxaDt7AIVGoeGCh0ucQ6oEAAYASAAEgJ_GfD_BwE">
+                        Adobe Stock</a>
+                </li>
+                <li>
+                    Imágenes de cartas <a href="https://www.facebook.com/marketplace/?ref=app_tab">
+                        Facebook.com</a>
+                </li>
+                <li>
+                    Contenido de galería <a href="https://puromotor.com/drift/">PuroMotor.com</a>
+                </li>
+            </ol>
+        </div>
+        <div id="links">
+            <h3>Iconos</h3>
+            <ol>
+                <li>
+                    Iconos diseñados por
+                    <a href="https://www.flaticon.es/autores/freepik" title="Freepik"> Freepik
+                    </a> por <a href="https://www.flaticon.es/" title="Flaticon">flaticon.es</a>
+                </li>
+            </ol>
+        </div>
+        <div id="links">
+            <h3>Transiciones/Efectos CSS</h3>
+            <ol>
+                <li>
+                    Efecto hover CCS de redes sociales por <a href="https://codepen.io/ephs23/pen/NeQZGx">Ephraim
+                        Sangma</a>
+                </li>
+                <li>
+                    Efecto hover CCS de menú autos por <a href="https://codepen.io/davidleininger/pen/mKrroW">David
+                        Leininger</a>
+                </li>
+                <li>
+                    Efecto hover CCS imágenes galería por <a
+                        href="https://www.w3schools.com/howto/howto_css_modal_images.asp"
+                        class="styled-link">w3schools.com</a>
+                </li>
+                <li>
+                    Efecto hover CCS cartas de vehiculos por <a href="https://codepen.io/russpate/pen/qRaepv">Free
+                        Frontend</a>
+                </li>
+            </ol>
+        </div>
+
+    </section>
+
+
+    <section>
+        <article id="menuAuxiliar" class="btnAuxiliares">
+            <a href="../extraPages/TiposAutos/auto4x4Page.html">
+                <button type="button" class="btn  btn-circle btn-xl" id="imgButton" data-toggle="tooltip"
+                    data-placement="bottom" title="Autos 4x4"
+                    style="background-image: url(../menuImages/Carro4x4.jpg);">
+                </button>
+            </a>
+
+            <a href="../extraPages/TiposAutos/autoSuvPage.html">
+                <button type="button" class="btn  btn-circle btn-xl" id="imgButton" data-toggle="tooltip"
+                    data-placement="bottom" title="Autos SUV"
+                    style="background-image: url(../menuImages/CarroSUV.jpg);">
+                </button>
+            </a>
+
+            <a href="../extraPages/TiposAutos/autoPickUpPage.html">
+                <button type="button" class="btn  btn-circle btn-xl" id="imgButton" data-toggle="tooltip"
+                    data-placement="bottom" title="Autos Pick-Up's"
+                    style="background-image: url(../menuImages/CarroPickUp.jpg);">
+                </button>
+            </a>
+
+            <a href="../extraPages/TiposAutos/autoSedanPage.html">
+                <button type="button" class="btn  btn-circle btn-xl" id="imgButton" data-toggle="tooltip"
+                    data-placement="bottom" title="Autos Sedan"
+                    style="background-image: url(../menuImages/CarroSeedan.jpg);">
+                </button>
+            </a>
+
+
+            <div class="row">
+                <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                        <div class="card card-body">
+                            Carros 4x4
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+
+
+
+    <footer id="piePagina">
+        <section>
+            <article>
+                <p>
+                    Desarrollador, diseñador, autor, creador: <a href="../extraPages/autorPage.html">John P.
+                        Alfaro C.</a>
+                </p>
+                <P>
+                    Proyecto final programado para la carrera de Ingeniería del Software de la <a
+                        href="https://www.utn.ac.cr/">Universidad Técnica Nacional</a>
+                </P>
+                <p>
+                    © 2020 FastCars.cr, Inc
+                </p>
+            </article>
+        </section>
+    </footer>
+
+</body>
+
+</html>

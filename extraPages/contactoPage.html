@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Car list web page">
+    <meta name="author" content="John P. Alfaro">
+    <title>Fast Cars.cr | John P. Alfaro</title>
+    <link rel="icon" href="../menuImages/FastCarsLogo.png">
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+
+    <!--CONEXION A lOS CSS DE ESTILOS DE LA PAGINA -->
+    <link rel="stylesheet" type="text/css" href="../styleSheets/auxMenuStyle.css">
+    <link rel="stylesheet" type="text/css" href="../styleSheets/contactenosPageStyle.css">
+
+    <link rel="stylesheet" type="text/css" href="../styleSheets_GeneralStyles/generalStyle.css">
+    <link rel="stylesheet" type="text/css" href="../styleSheets_GeneralStyles/generalStyleMinWidth.css">
+    <link rel="stylesheet" type="text/css" href="../styleSheets_GeneralStyles/GeneralStyleMobile.css">
+    <link rel="stylesheet" type="text/css" href="../styleSheets_GeneralStyles/GeneralStyleMobile_Aux.css">
+
+    <!--CONEXION A LOS JS PARA ENVIAR CORREO ELECTRONICO-->
+    <script src="../js_Documents/enviarEmail.js" type="text/javascript"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        $(document).ready(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+      });
+  </script>
+</head>
+
+<body onLoad="caractGenerales()">
+
+
+    <header id="encabezado">
+        <article id="menuEncabezado">
+            <nav class="navbar navbar-expand-lg navbar-light .bg-transparent" id="menuPrincipal">
+
+                <a class="navbar-brand" href="../homePage.html"><img src="../menuImages/FastCarsLogo.png" alt=""></a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="../extraPages/nosotrosPage.html">Nosotros</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Vehículos en venta </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="../extraPages/TiposAutos/auto4x4Page.html">4x4</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../extraPages/TiposAutos/autoSuvPage.html">SUV</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../extraPages/TiposAutos/autoPickUpPage.html">Pick-Up</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../extraPages/TiposAutos/autoSedanPage.html">Sedán</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../extraPages/TiposAutos/autoMicroPage.html">Micros</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item"
+                                    href="../extraPages/TiposAutos/autoTrabajoPage.html">Trabajo</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="../extraPages/contactoPage.html">Contáctenos</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Más
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="../extraPages/galeriaPage.html">Galería</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../extraPages/autorPage.html">Autor</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../extraPages/bibliografiaPage.html">Bibliografía</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </article>
+    </header>
+
+
+    <section>
+        <div class="jumbotron jumbotron-fluid" id="msjInicioContacto">
+            <div class="container">
+                <h1 class="display-4"> Contáctenos</h1>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <article id="barraDivisora">
+            <p>
+                <br>
+            </p>
+        </article>
+    </section>
+
+
+    <section>
+        <article id="contenidoContacto">
+
+            <h3>Favor llenar el formulario para una cita:</h3>
+
+            <form class="was-validated">
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="input_Email">Correo electrónico:</label>
+                        <input type="email" class="form-control form-control-sm" id="input_Email"
+                            placeholder="Ingrese correo electronico" name="input_Email" maxlength="64" required>
+                        <div class="valid-feedback">Datos completos.</div>
+                        <div class="invalid-feedback">Favor llenar este espacio completamente.</div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="input_Nombre">Nombre:</label>
+                        <input type="text" class="form-control form-control-sm" id="input_Nombre"
+                            placeholder="Ingrese nombre" name="input_Nombre" maxlength="40" required>
+                        <div class="valid-feedback">Datos completos.</div>
+                        <div class="invalid-feedback">Favor llenar este espacio completamente.</div>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label for="input_Apellido">Apellidos:</label>
+                        <input type="text" class="form-control form-control-sm" id="input_Apellido"
+                            placeholder="Ingrese apellidos" name="input_Apellido" maxlength="50" required>
+                        <div class="valid-feedback">Datos completos.</div>
+                        <div class="invalid-feedback">Favor llenar este espacio completamente.</div>
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group col-md-4">
+                        <label for="input_Nacimiento">Fecha nacimiento:</label>
+                        <input type="date" class="form-control form-control-sm" id="input_Nacimiento"
+                            placeholder="Ingrese su fecha de nacimiento" name="input_Nacimiento" min="" max="" required>
+                        <div class="valid-feedback">Datos completos.</div>
+                        <div class="invalid-feedback">Favor llenar este espacio completamente.</div>
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group col-md-4">
+                        <label for="input_GradoAcademico">Grado académico</label>
+                        <select id="input_GradoAcademico" class="form-control" required>
+                            <option value="">-- seleccionar opción --</option>
+                            <option value="1" text="Escuela Completa">Escuela Completa</option>
+                            <option value="2" text="Escuela Incompleta">Escuela Incompleta</option>
+                            <option value="3" text="Colegio completo">Colegio completo</option>
+                            <option value="4" text="Colegio incompleto">Colegio incompleto</option>
+                            <option value="5" text="Universidad incompleto">Universidad incompleta</option>
+                            <option value="6" text="Universidad completa">Universidad completa</option>
+                        </select>
+                        <div class="valid-feedback">Selección guardada</div>
+                        <div class="invalid-feedback">Favor seleccionar una opción de las disponibles</div>
+
+                    </div>
+
+                    &nbsp;&nbsp; &nbsp;&nbsp;
+
+                    <div class="form-group col-md-4">
+                        <label for="input_Genero">Genero:</label>
+
+                        <div class="form-check-label ">
+                            &nbsp;&nbsp;&nbsp;
+                            <input class="form-check-input" type="radio" name="input_Genero" id="input_Genero" value="F"
+                                required>
+                            <label class="form-check-label" for="radioFemenimo">F</label>
+
+                            &nbsp;&nbsp; &nbsp;&nbsp;
+
+                            <input class="form-check-input" type="radio" name="input_Genero" id="input_Genero" value="M"
+                                required>
+                            <label class="form-check-label" for="radioMasculino">M</label>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+
+                        <input class="form-check-input form-control-sm" type="checkbox" name="input_AceptoTerminos"
+                            id="input_AceptoTerminos" required> Estoy
+                        de acuerdo con compartir esta información
+                        <div class="valid-feedback">Gracias.</div>
+                        <div class="invalid-feedback">Aceptar terminos para enviar correo</div>
+
+                    </label>
+                </div>
+
+                <button type="button" class="btn btn-primary" id="btnEnviarFormulario" onClick="sendEmail()"
+                    >Enviar datos</button>
+
+            </form>
+
+
+        </article>
+
+    </section>
+
+
+    <section>
+        <article id="menuAuxiliar" class="btnAuxiliares">
+            <a href="../extraPages/TiposAutos/auto4x4Page.html">
+                <button type="button" class="btn  btn-circle btn-xl" id="imgButton" data-toggle="tooltip"
+                    data-placement="bottom" title="Autos 4x4"
+                    style="background-image: url(../menuImages/Carro4x4.jpg);">
+                </button>
+            </a>
+
+            <a href="../extraPages/TiposAutos/autoSuvPage.html">
+                <button type="button" class="btn  btn-circle btn-xl" id="imgButton" data-toggle="tooltip"
+                    data-placement="bottom" title="Autos SUV"
+                    style="background-image: url(../menuImages/CarroSUV.jpg);">
+                </button>
+            </a>
+
+            <a href="../extraPages/TiposAutos/autoPickUpPage.html">
+                <button type="button" class="btn  btn-circle btn-xl" id="imgButton" data-toggle="tooltip"
+                    data-placement="bottom" title="Autos Pick-Up's"
+                    style="background-image: url(../menuImages/CarroPickUp.jpg);">
+                </button>
+            </a>
+
+            <a href="../extraPages/TiposAutos/autoSedanPage.html">
+                <button type="button" class="btn  btn-circle btn-xl" id="imgButton" data-toggle="tooltip"
+                    data-placement="bottom" title="Autos Sedan"
+                    style="background-image: url(../menuImages/CarroSeedan.jpg);">
+                </button>
+            </a>
+
+            <div class="row">
+                <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                        <div class="card card-body">
+                            Carros 4x4
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+
+    <footer id="piePagina">
+        <section>
+            <article>
+                <p>
+                    Desarrollador, diseñador, autor, creador: <a href="../extraPages/autorPage.html">John P.
+                        Alfaro C.</a>
+                </p>
+                <P>
+                    Proyecto final programado para la carrera de Ingeniería del Software de la <a
+                        href="https://www.utn.ac.cr/">Universidad Técnica Nacional</a>
+                </P>
+                <p>
+                    © 2020 FastCars.cr, Inc
+                </p>
+            </article>
+        </section>
+    </footer>
+
+
+
+
+</body>
+
+</html>

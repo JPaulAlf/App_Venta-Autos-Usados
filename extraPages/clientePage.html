@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Car list web page">
+    <meta name="author" content="John P. Alfaro">
+    <title>Fast Cars.cr | John P. Alfaro</title>
+    <link rel="icon" href="../menuImages/FastCarsLogo.png">
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+
+    <!--CONEXION A lOS CSS DE ESTILOS DE LA PAGINA -->
+    <link rel="stylesheet" type="text/css" href="../styleSheets/clientePageStyle.css">
+
+    <link rel="stylesheet" type="text/css" href="../styleSheets_GeneralStyles/generalStyle.css">
+    <link rel="stylesheet" type="text/css" href="../styleSheets_GeneralStyles/generalStyleMinWidth.css">
+    <link rel="stylesheet" type="text/css" href="../styleSheets_GeneralStyles/GeneralStyleMobile.css">
+    <link rel="stylesheet" type="text/css" href="../styleSheets_GeneralStyles/GeneralStyleMobile_Aux.css">
+
+    <!--CONEXION A LOS JS PARA ENVIAR CORREO ELECTRONICO-->
+    <script src="../js_Documents/mapaGoogle.js" type="text/javascript"></script>
+    <script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWwi1IAXEBE1kegqz9pVlAbkl8kQlkF8Y&callback=initMap"></script>
+    <script src="../js_Documents/mapaGoogle.js" type="text/javascript"></script>
+    <script src="../js_Documents/enviarEmail.js" type="text/javascript"></script>
+    <script src="../js_Documents/cotizacion.js" type="text/javascript"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+
+</head>
+
+<body onLoad="caractGenerales()">
+
+
+    <header id="encabezado">
+        <article id="menuEncabezado">
+            <nav class="navbar navbar-expand-lg navbar-light .bg-transparent" id="menuPrincipal">
+
+                <a class="navbar-brand" href="../homePage.html"><img src="../menuImages/FastCarsLogo.png" alt=""></a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="../extraPages/nosotrosPage.html">Nosotros</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Vehículos en venta </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="../extraPages/TiposAutos/auto4x4Page.html">4x4</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../extraPages/TiposAutos/autoSuvPage.html">SUV</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../extraPages/TiposAutos/autoPickUpPage.html">Pick-Up</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../extraPages/TiposAutos/autoSedanPage.html">Sedán</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../extraPages/TiposAutos/autoMicroPage.html">Micros</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item"
+                                    href="../extraPages/TiposAutos/autoTrabajoPage.html">Trabajo</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="../extraPages/contactoPage.html">Contáctenos</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Más
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="../extraPages/galeriaPage.html">Galería</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../extraPages/autorPage.html">Autor</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../extraPages/bibliografiaPage.html">Bibliografía</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </article>
+    </header>
+
+
+    <section>
+        <div class="jumbotron jumbotron-fluid" id="msjInicioCliente">
+            <div class="container">
+                <h1 class="display-4">Obtener más información</h1>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <article id="barraDivisora">
+            <p>
+                <br>
+            </p>
+        </article>
+    </section>
+
+
+    <div id="ubicacionNegocio">
+        <h3>¿Dónde estamos ubicados?</h3>
+        <div id="grupoObjetosUbicacion" class="row">
+            <div id="mapaGoogle">
+                GoogleMaps.com
+            </div>
+            <div id="horariosOficina">
+                <h4>Horario de atención:</h4>
+                <ul id="horarios">
+                    <li> <b> Lunes:</b> 8:00am - 6:00pm</li>
+                    <li> <b> Martes:</b> 8:00am - 6:00pm</li>
+                    <li> <b> Miércoles:</b> 8:00am - 6:00pm</li>
+                    <li> <b> Jueves:</b> 8:00am - 6:00pm</li>
+                    <li> <b> Viernes:</b> 8:00am - 5:00pm</li>
+                    <li> <b> Sábado:</b> 9:00am - 3:00pm</li>
+                    <li> <b> Domingo:</b> Cerrado</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <section>
+
+        <article id="contenidoCliente">
+
+            <h3>¿Deseas agendar una cita con un representante?</h3>
+            <h4>Favor llenar el siguiente formulario para una cita:</h4>
+
+            <form class="was-validated">
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="input_Email">Correo electrónico:</label>
+                        <input type="email" class="form-control form-control-sm" id="input_Email"
+                            placeholder="Ingrese correo electronico" name="input_Email" maxlength="64" required>
+                        <div class="valid-feedback">Datos completos.</div>
+                        <div class="invalid-feedback">Favor llenar este espacio completamente.</div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="input_Nombre">Nombre:</label>
+                        <input type="text" class="form-control form-control-sm" id="input_Nombre"
+                            placeholder="Ingrese nombre" name="input_Nombre" maxlength="40" required>
+                        <div class="valid-feedback">Datos completos.</div>
+                        <div class="invalid-feedback">Favor llenar este espacio completamente.</div>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label for="input_Apellido">Apellidos:</label>
+                        <input type="text" class="form-control form-control-sm" id="input_Apellido"
+                            placeholder="Ingrese apellidos" name="input_Apellido" maxlength="50" required>
+                        <div class="valid-feedback">Datos completos.</div>
+                        <div class="invalid-feedback">Favor llenar este espacio completamente.</div>
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group col-md-4">
+                        <label for="input_Nacimiento">Fecha nacimiento:</label>
+                        <input type="date" class="form-control form-control-sm" id="input_Nacimiento"
+                            placeholder="Ingrese su fecha de nacimiento" name="input_Nacimiento" min="" max="" required>
+                        <div class="valid-feedback">Datos completos.</div>
+                        <div class="invalid-feedback">Favor llenar este espacio completamente.</div>
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group col-md-4">
+                        <label for="input_GradoAcademico">Grado académico:</label>
+                        <select id="input_GradoAcademico" class="form-control" required>
+                            <option value="">-- seleccionar opción --</option>
+                            <option value="1" text="Escuela Completa">Escuela Completa</option>
+                            <option value="2" text="Escuela Incompleta">Escuela Incompleta</option>
+                            <option value="3" text="Colegio completo">Colegio Completo</option>
+                            <option value="4" text="Colegio incompleto">Colegio Incompleto</option>
+                            <option value="5" text="Universidad incompleto">Universidad Incompleta</option>
+                            <option value="6" text="Universidad completa">Universidad Completa</option>
+                        </select>
+                        <div class="valid-feedback">Selección guardada</div>
+                        <div class="invalid-feedback">Favor seleccionar una opción de las disponibles</div>
+
+                    </div>
+
+                    &nbsp;&nbsp; &nbsp;&nbsp;
+
+                    <div class="form-group col-md-4">
+                        <label for="input_Genero">Genero:</label>
+
+                        <div class="form-check-label ">
+                            &nbsp;&nbsp;&nbsp;
+                            <input class="form-check-input" type="radio" name="input_Genero" id="input_Genero" value="F"
+                                required>
+                            <label class="form-check-label" for="radioFemenimo">F</label>
+
+                            &nbsp;&nbsp; &nbsp;&nbsp;
+
+                            <input class="form-check-input" type="radio" name="input_Genero" id="input_Genero" value="M"
+                                required>
+                            <label class="form-check-label" for="radioMasculino">M</label>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+
+                        <input class="form-check-input form-control-sm" type="checkbox" name="input_AceptoTerminos"
+                            id="input_AceptoTerminos" required> Estoy
+                        de acuerdo con compartir esta información
+                        <div class="valid-feedback">Gracias.</div>
+                        <div class="invalid-feedback">Aceptar terminos para enviar correo</div>
+
+                    </label>
+                </div>
+
+                <button type="button" class="btn btn-primary" id="btnEnviarFormulario" onClick="sendEmail()">Enviar
+                    datos</button>
+
+            </form>
+
+        </article>
+
+        <article id="contenidoCotizacion">
+
+            <h3>¿Deseas financiar el vehículo?</h3>
+            <h4>Favor llenar el siguiente formulario para saber su cuota mensual:</h4>
+            <h4>**Tasa Interés: %7,10</h4>
+
+            <form class="was-validated">
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="input_vehiculo">Valor del vehículo:</label>
+                        <input type="text" class="form-control form-control-sm" id="input_vehiculo"
+                            placeholder="Ingrese valor" name="input_vehiculo" maxlength="40" required>
+                        <div class="valid-feedback">Datos completos.</div>
+                        <div class="invalid-feedback">Favor llenar este espacio completamente</div>
+                    </div>
+
+                    <div class="form-group col-md-3">
+                        <label for="input_plazo">Plazo en Años:</label>
+                        <input type="number" class="form-control form-control-sm" id="input_plazo"
+                            placeholder="Seleccionar plazo" min="1" step="1" name="input_plazo" required>
+                        <div class="valid-feedback">Datos completos.</div>
+                        <div class="invalid-feedback">Favor seleccionar plazo</div>
+                    </div>
+
+                </div>
+
+                <button type="button" class="btn btn-primary" id="btnConsultarCuota" data-toggle="modal"
+                    data-target="#modalCotizacion" onClick="calculoCotizacion()">Consultar</button>
+
+            </form>
+
+            <!--Modal-->
+            <div class="modal fade" id="modalCotizacion">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5>Cuota mensual por vehículo</h5>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                Esta es la cuota mensual para pagar, si desea realizar el financiamiento a una tasa de
+                                interes del 7,10%. <br>**Tasa sujeta a cambios**
+
+                            </p>
+
+                            <p id="resultadoEncuesta" style="font-weight: bold;">
+
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+    </section>
+
+
+    <footer id="piePagina">
+        <section>
+            <article>
+                <p>
+                    Desarrollador, diseñador, autor, creador: <a href="../extraPages/autorPage.html">John P.
+                        Alfaro C.</a>
+                </p>
+                <P>
+                    Proyecto final programado para la carrera de Ingeniería del Software de la <a
+                        href="https://www.utn.ac.cr/">Universidad Técnica Nacional</a>
+                </P>
+                <p>
+                    © 2020 FastCars.cr, Inc
+                </p>
+            </article>
+        </section>
+    </footer>
+
+
+
+</body>
+
+</html>
